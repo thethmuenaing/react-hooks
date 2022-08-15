@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import ClassMouse from "./components/UseEffect/ClassMouse";
+import HookMouse from "./components/UseEffect/HookMouse";
 function App() {
 	return (
 		<div className="App">
-			<ClassMouse />
+			<HookMouse />
 		</div>
 	);
 }
