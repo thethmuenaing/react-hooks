@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import IntervalHookCounter from "./components/UseEffect/IntervalHookCounter";
+import IntervalClassCounter from "./components/UseEffect/IntervalClassCounter";
 function App() {
 	return (
 		<div className="App">
-			<IntervalHookCounter />
+			<IntervalClassCounter />
 		</div>
 	);
 }
