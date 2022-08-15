@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import MouseContainer from "./components/UseEffect/MouseContainer";
+import IntervalHookCounter from "./components/UseEffect/IntervalHookCounter";
 function App() {
 	return (
 		<div className="App">
-			<MouseContainer />
+			<IntervalHookCounter />
 		</div>
 	);
 }
