@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import IntervalClassCounter from "./components/UseEffect/IntervalClassCounter";
+import DataFetching from "./components/UseEffect/DataFetching";
 function App() {
 	return (
 		<div className="App">
-			<IntervalClassCounter />
+			<DataFetching />
 		</div>
 	);
 }
