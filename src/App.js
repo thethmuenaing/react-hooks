@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Component from "./components/UseReducer/UseReducer with UseContext/Component";
+import DataFetchingOne from "./components/UseReducer/Fetching data with UseReducer/DataFetchingOne";
 
 function App() {
 	return (
 		<div className="App">
-			<Component />
+			<DataFetchingOne />
 		</div>
 	);
 }
