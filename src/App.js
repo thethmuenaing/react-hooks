@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import CounterThree from "./components/UseReducer/CounterThree";
+import Component from "./components/UseReducer/UseReducer with UseContext/Component";
 
 function App() {
 	return (
 		<div className="App">
-			<CounterThree />
+			<Component />
 		</div>
 	);
 }
