@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import ClassTimer from "./components/UseRef/ClassTimer";
-import HookTimer from "./components/UseRef/HookTimer";
-
+import DocTitleOne from "./components/Custom/DocTitleOne";
+import DocTitleTwo from "./components/Custom/DocTitleTwo";
 function App() {
 	return (
 		<div className="App">
-			<ClassTimer />
-			<HookTimer />
+			<DocTitleOne />
+			<DocTitleTwo />
 		</div>
 	);
 }
