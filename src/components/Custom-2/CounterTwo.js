@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import useCounter from "./Hook-2/useCounter";
 
 const CounterTwo = () => {
-	const [count, increment, decrement, reset] = useCounter();
+	const [count, increment, decrement, reset] = useCounter(0, 1);
 	return (
 		<div>
 			<h2>Count = {count}</h2>
