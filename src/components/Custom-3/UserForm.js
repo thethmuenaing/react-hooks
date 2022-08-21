@@ -1,31 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
+import useInput from "./Hool-3/useInput";
 
 const UserForm = () => {
-	const [firstName, setFirstName] = useState("");
-	const [lastName, setLastName] = useState("");
+	const [firstName, bildFirstName, resetFirstName] = useInput("");
+	const [lastName, bildLastName, resetLastName] = useInput("");
 
 	const submitHandler = (e) => {
 		e.preventDefault();
 		alert(`Hello ${firstName} ${lastName}`);
+		resetFirstName();
+		resetLastName();
 	};
 	return (
 		<div>
 			<form onSubmit={submitHandler}>
 				<div>
 					<label>First Name</label>
-					<input
-						value={firstName}
-						onChange={(e) => setFirstName(e.target.value)}
-						type="text"
-					/>
+					<input {...bildFirstName} type="text" />
 				</div>
 				<div>
 					<label>Last Name</label>
-					<input
-						value={lastName}
-						onChange={(e) => setLastName(e.target.value)}
-						type="text"
-					/>
+					<input {...bildLastName} type="text" />
 				</div>
 				<button>Submit</button>
 			</form>
