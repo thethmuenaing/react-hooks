@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import NewFile from "./components/componentTwo/NewFile";
+import FunctionShare from "./components/componentTwo/FunctionShare";
 function App() {
 	return (
 		<div className="App">
-			<NewFile />
+			<FunctionShare />
 		</div>
 	);
 }
