@@ -1,19 +1,9 @@
 import React, { useState } from "react";
+import FunctionShareCustom from "./HookFile/FunctionShareCustom";
 
 const FunctionShare = () => {
-	const [count, setCount] = useState(0);
+	const [count, increment, decrement, reset] = FunctionShareCustom(0, 2);
 
-	const increment = () => {
-		setCount((prevCount) => prevCount + 1);
-	};
-
-	const decrement = () => {
-		setCount((prevCount) => prevCount - 1);
-	};
-
-	const reset = () => {
-		setCount(0);
-	};
 	return (
 		<div>
 			<div>Count - [{count}]</div>
